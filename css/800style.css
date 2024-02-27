@@ -1,0 +1,166 @@
+@media screen and (max-width: 800px) {
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  #indexContainer {
+    display: grid;
+    grid-template-areas: "header" "title" "about" "preview" "contact" "btt " "footer";
+  }
+  #indexContainer header nav #hambMenu {
+    display: block;
+    height: 60px;
+    width: 50px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+  #indexContainer header nav ul {
+    display: none;
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    float: none;
+    text-align: center;
+  }
+  #indexContainer header nav ul p {
+    display: block;
+    color: #F4EEEE;
+    padding-top: 40px;
+    font-size: 12px;
+  }
+  #indexContainer header nav li {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+  }
+  #indexContainer header #logo {
+    width: 50px;
+    height: 100px;
+  }
+  #indexContainer #title {
+    padding: 30px;
+    margin-bottom: 0px;
+  }
+  #indexContainer #title h1 {
+    padding-left: 10px;
+    font-size: 70px;
+    line-height: 70px;
+  }
+  #indexContainer #title p {
+    padding-left: 10px;
+  }
+  #indexContainer #title button {
+    margin-left: 10px;
+  }
+  #indexContainer #about {
+    grid-area: about;
+    padding: 30px;
+  }
+  #indexContainer #about #column {
+    width: 100%;
+  }
+  #indexContainer #about #column img {
+    width: 250px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #indexContainer #about #column h2 {
+    padding-left: 10px;
+  }
+  #indexContainer #about #column p {
+    margin-top: 10px;
+    padding-left: 10px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  #indexContainer #preview {
+    grid-area: preview;
+    padding: 20px;
+  }
+  #indexContainer #preview h2 {
+    padding-left: 10px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+  #indexContainer #preview #projects #projectInfo {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 0px;
+  }
+  #indexContainer #preview #projects #projectInfo h3 {
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+  #indexContainer #preview #projects #projectInfo p {
+    padding: 0px;
+    margin-bottom: 5px;
+  }
+  #indexContainer #preview #projects #projectInfo img {
+    width: 100%;
+  }
+  #indexContainer #preview #courses {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  #indexContainer #preview #courses #course {
+    padding-top: 10px;
+  }
+  #indexContainer #preview #courses #course ul {
+    list-style-type: none;
+    padding: 10px;
+  }
+  #indexContainer #preview #courses #course ul li {
+    padding: 10px;
+  }
+  #indexContainer #preview #courses #course ul a {
+    text-decoration: none;
+  }
+  #indexContainer #preview #courses #course ul a:hover {
+    text-decoration: underline;
+  }
+  #indexContainer #contact {
+    grid-area: contact;
+    padding: 10px;
+  }
+  #indexContainer #contact h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #indexContainer #contact p {
+    padding-left: 20px;
+  }
+  #indexContainer #contact #column {
+    width: 100%;
+    padding-left: 20px;
+  }
+  #indexContainer #contact #column img[alt~=queen] {
+    width: 250px;
+    height: 250px;
+  }
+  #indexContainer #contact #column img[alt~=icon] {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #indexContainer footer #logo {
+    width: 50px;
+    height: 100px;
+  }
+  #indexContainer footer nav ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    float: none;
+    text-align: center;
+  }
+  #indexContainer footer nav li {
+    display: block;
+    padding: 15px;
+  }
+}/*# sourceMappingURL=800style.css.map */

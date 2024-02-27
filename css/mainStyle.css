@@ -1,0 +1,237 @@
+* {
+  padding: 0px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4EEEE;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+p, ul {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #F4EEEE;
+  font-size: 16px;
+}
+button a {
+  color: #2B2A2A;
+}
+
+#indexContainer {
+  display: grid;
+  grid-template-areas: "header header header header" "title title title title" "about about about about" "preview preview preview preview" "contact contact contact contact" "btt btt btt btt" "footer footer footer footer";
+}
+#indexContainer header {
+  grid-area: header;
+  background-color: #2B2A2A;
+}
+#indexContainer header nav #hambMenu {
+  display: none;
+}
+#indexContainer header nav #logo {
+  width: 50px;
+  height: 100px;
+}
+#indexContainer header nav ul {
+  list-style-type: none;
+  margin-top: 35px;
+  float: right;
+}
+#indexContainer header nav ul p {
+  display: none;
+}
+#indexContainer header nav li {
+  display: inline;
+  padding: 30px;
+}
+#indexContainer header nav a {
+  color: #F4EEEE;
+  text-decoration: none;
+}
+#indexContainer header nav a:hover {
+  text-decoration: underline;
+}
+#indexContainer #title {
+  grid-area: title;
+  background: url("../images/flowersBGoverlay.png");
+  background-size: cover;
+  padding: 70px;
+  color: #F4EEEE;
+}
+#indexContainer #title h1 {
+  font-size: 150px;
+  padding-left: 150px;
+  line-height: 130px;
+}
+#indexContainer #title p {
+  padding-left: 150px;
+}
+#indexContainer #title button {
+  margin-left: 150px;
+}
+#indexContainer #about {
+  grid-area: about;
+  padding: 70px;
+  content: "";
+  display: table;
+  clear: both;
+}
+#indexContainer #about #column {
+  float: left;
+  width: 50%;
+}
+#indexContainer #about #column img {
+  width: 500px;
+  height: 600px;
+}
+#indexContainer #about #column h2 {
+  padding-left: 150px;
+}
+#indexContainer #about #column p {
+  margin-top: 10px;
+  padding-left: 150px;
+  width: 90%;
+  line-height: 24px;
+  font-size: 16px;
+}
+#indexContainer #preview {
+  grid-area: preview;
+  background-color: #2B2A2A;
+  color: #F4EEEE;
+  padding: 70px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#indexContainer #preview h2 {
+  padding-left: 150px;
+  margin-bottom: 10px;
+}
+#indexContainer #preview #projects {
+  content: "";
+  display: table;
+  clear: both;
+}
+#indexContainer #preview #projects #projectInfo {
+  float: left;
+  width: 50%;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  padding-left: 150px;
+}
+#indexContainer #preview #projects #projectInfo h3 {
+  padding: 10px;
+}
+#indexContainer #preview #projects #projectInfo p {
+  padding: 10px;
+  line-height: 20px;
+}
+#indexContainer #preview #projects #projectInfo img {
+  width: 400px;
+  height: 250px;
+}
+#indexContainer #preview #courses {
+  padding-left: 150px;
+}
+#indexContainer #preview #courses #course ul {
+  list-style-type: none;
+  padding: 10px;
+}
+#indexContainer #preview #courses #course ul li {
+  padding: 10px;
+}
+#indexContainer #preview #courses #course ul a {
+  color: #F4EEEE;
+  text-decoration: none;
+}
+#indexContainer #preview #courses #course ul a:hover {
+  text-decoration: underline;
+}
+#indexContainer #contact {
+  grid-area: contact;
+  padding: 70px;
+  content: "";
+  display: table;
+  clear: both;
+}
+#indexContainer #contact h2 {
+  padding-bottom: 20px;
+  padding-top: 150px;
+}
+#indexContainer #contact #column {
+  float: left;
+  width: 40%;
+  padding-left: 150px;
+}
+#indexContainer #contact #column img[alt~=queen] {
+  width: 400px;
+  height: 400px;
+}
+#indexContainer #contact #column img[alt~=icon] {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
+#indexContainer #btt {
+  grid-area: btt;
+  background-color: #F4EEEE;
+  padding: 50px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#indexContainer #btt img {
+  width: 50px;
+  height: 50px;
+}
+#indexContainer footer {
+  grid-area: footer;
+  background-color: #2B2A2A;
+  color: #F4EEEE;
+  padding: 20px;
+}
+#indexContainer footer #logo {
+  width: 150px;
+  height: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#indexContainer footer nav {
+  text-align: center;
+}
+#indexContainer footer nav ul {
+  text-align: center;
+  list-style-type: none;
+  margin-top: 35px;
+}
+#indexContainer footer nav li {
+  display: inline;
+  padding: 30px;
+}
+#indexContainer footer nav a {
+  color: #F4EEEE;
+  text-decoration: none;
+}
+#indexContainer footer nav a:hover {
+  text-decoration: underline;
+}
+#indexContainer footer nav img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+#indexContainer footer nav p {
+  padding: 30px;
+}/*# sourceMappingURL=mainStyle.css.map */

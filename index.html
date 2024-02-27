@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"><!--Title font-->
+    <link href="css/mainStyle.scss" rel="stylesheet" type="text/scss">
+    <link href="css/mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="css/800style.scss" rel="stylesheet" type="text/scss">
+    <link href="css/800style.css" rel="stylesheet" type="text/css">
+    <link href="css/animation.scss" rel="stylesheet" type="text/scss">
+    <link href="css/animation.css" rel="stylesheet" type="text/css">
+    <script defer src="js/javascript.js"></script><!--defer attribute will run after the html body-->
+
+    <title>Darrian's Portfolio</title>
+</head>
+<body>
+    <div id="indexContainer">
+        <header id="header">
+            <nav id="nav">
+                <a href="index.html"><img src="images/logos/DPUXILOGOgrayI.png" style="margin-left: 50px;" alt="DP UX/UI Logo" id="logo"></a>
+                <img src="images/icons/hamburgerMenu.png" alt="hamburger menu icon" id="hambMenu" onclick="displayMenu()">
+                <ul id="navMenu">
+                    <li><a onclick="showTitle()">HOME</a></li>
+                    <li><a onclick="showAbout()">ABOUT</a></li>
+                    <li><a onclick="showUXUI()">UX/UI</a></li>
+                    <li><a onclick="showWDV()">WEB DEVELOPMENT</a></li>
+                    <li><a onclick="showContact()">CONTACT</a></li>
+                    <p onclick="closeHambMenu()"><em>CLOSE MENU</em></p>
+                </ul>
+            </nav><!--close nav-->
+        </header>
+
+        <div id="title">
+            <h1 class="hidden">
+            DARRIAN<br>
+            PECK
+            </h1>
+            <p class="hidden">DESIGNER & DEVELOPER</p>
+            <button><a href="https://docs.google.com/document/d/1l4BF0-CKa08G33-9uDj1Mc6S_d-d4tJ_66cruXghSI4/edit?usp=sharing">MY RESUME</a></button>
+        </div>
+
+        <div id="about">
+            <div id="column">
+            <h2 class="hidden">ABOUT ME</h2>
+            <p class="hidden">
+                "I have always loved to create. Painting, drawing, and making too many DIY projects. 
+                I took so much time figuring out what I wanted as a career. Radiology was my first plan, then sonography. 
+                I realized very quickly it would be a repetative job. Afraid of getting bored, and realizing I am meant to explore my creativity as it grows, happened fast. 
+                I took a few years to work while deciding what I wanted to do. I was a server and bartender; working on my people skills.
+                I started taking quizzes to find out what career is right for me. I was looking for someone else to tell me the answer…
+                I never thought creativity was a trait to have in the tech world, so you can imagine my feeling when I discovered UX Design. 
+                The term came to me on TikTok. I had no idea what it was, and being me, I had to know. 
+                After some research, I fell in love with the idea and figured out what kind of degree I needed to get a job like this."
+            </p>
+            <p class="hidden">
+                "So, here I am in the Web Development Program at Des Moines Area Community College, graduating in May of 2024. 
+                I know I am a design forward person and really enjoy frontend work. I have experience with backend work, and would love to learn more. 
+                I always say, 'I need to love what I do.' and I know I can continue to shout it after I graduate."
+            </p>
+            </div>
+
+            <div id="column">
+                <img src="images/portraitGrayBGSVG.svg" alt="portrait" class="hidden" id="portrait">
+            </div>
+        </div>
+
+        <div id="preview">
+            <h2 id="uxui">PROECTS & WORK</h2>
+            <div id="projects">
+                <div id="projectInfo" class="hidden">
+                    <img src="images/ftlofPreview.png" alt="preview of project wireframe">
+                    <h3>Recipe Book Website</h3>
+                    <p>Wireframes created in Adobe XD. The live site contains HTML/CSS/SCSS, JavaScript, and PHP.</p>
+                    <button><a href="UXUIprojects/recipeSite/index.html">MORE DETAILS</a></button>
+                </div>
+    
+                <div id="projectInfo" class="hidden">
+                    <img src="images/portfolioPreview.png" alt="preview of Darrian's portfolio">
+                    <h3>Why I Designed My Portfolio This Way</h3>
+                    <p>How do I design me? <br>
+                        Wireframes created in XD. I built my portfolio with HTML/CSS and JavaScript.</p>
+                    <button><a href="UXUIprojects/portfolioDesignProcess/portfolioDesign.html">MORE DETAILS</a></button>
+                </div>
+            </div>
+
+            <div id="courses">
+                <div id="course" class="hidden">
+                    <h3>HTML/CSS</h3>
+                    <ul>
+                        <li><a href="previousWork/html:css/darrianpeck.com1stSite/index.html">Darrian's First Portfolio (links do not work within site)</a></li>
+                        <li><a href="previousWork/html:css/darrianpeck.com/index.html">Darrian's Second (Unfinished) Portfolio</a></li>
+                        <li><a href="previousWork/html:css/bowling/index.html">Lana Lanes Bowling</a></li>
+                        <li><a href="previousWork/html:css/koala_site_2020/index.html">Koala Site</a></li>
+                        <li><a href="previousWork/html:css/savannas_coffee_final/index.html">Savanna's Coffee House</a></li>
+                        <li><a href="previousWork/html:css/summit_farms/index.html">Summit Farms</a></li>
+                        <li><a href="previousWork/html:css/wdv205css/unit-4/4-1/page1.html">CSS Float Layout</a></li>
+                        <li><a href="previousWork/html:css/wdv205css/unit-8/bootstrap_layout_exercise/pattys_pastries.html">Patty's Pastries</a></li>
+                        <li><a href="previousWork/html:css/wdv205css/unit-8/bootstrapAssignment/skinCare.html">Skin Care</a></li>
+                        <li><a href="previousWork/html:css/wdv205css/unit-11/flipcards.html">Flip Cards</a></li>
+                        <li><a href="previousWork/html:css/wdv205css/unit-12/12-1AnimationAssignment/animationAssignment.html">Alien Animation (does not work in Chrome)</a></li>
+                    </ul>
+                </div>
+
+                <div id="course" class="hidden">
+                    <h3>JavaScript</h3>
+                    <ul>
+                        <li><a href="previousWork/javascript/arraysAssignment.html">Arrays</a></li>
+                        <li><a href="previousWork/javascript/assignmentCompareNames.html">Compare Names</a></li>
+                        <li><a href="previousWork/javascript/eventHandlersAssignment.html">Event Handlers</a></li>
+                        <li><a href="previousWork/javascript/newUnit-3Assignment.html">Functions</a></li>
+                        <li><a href="previousWork/javascript/styleObjectAssignment.html">Style Object</a></li>
+                        <li><a href="previousWork/javascript/textfieldsAssignment.html">Text Fields</a></li>
+                        <li><a href="previousWork/advancedJSwdv321/homework/unit2.dynamicDropDownForm.html">Dynamic Dropdown List</a></li>
+                        <li><a href="previousWork/advancedJSwdv321/homework/Unit3A-StructureAssignment.html">Dynamic Structure (does not work properly in Chrome)</a></li>
+                        <li><a href="previousWork/advancedJSwdv321/homework/unit4/4-1JSObject.html">JavaScript Object - using XML</a></li>
+                        <li><a href="previousWork/advancedJSwdv321/homework/unit7/7-1AJAX.html">AJAX</a></li>
+                    </ul>
+                </div>
+
+                <div id="course" class="hidden">
+                    <h3>PHP</h3>
+                    <ul>
+                        <li><a href="previousWork/PHPwdv341/formatted-products/retail-products.php">Retail Products</a></li>
+                        <li><a href="previousWork/PHPwdv341/formatEvents.php">Formatted Events From PHP MyAdmin</a></li>
+                        <li><a href="previousWork/PHPwdv341/SQLselect.php">SQL SELECT Event</a></li>
+                        <li><a href="previousWork/PHPwdv341/sessionExampleProject/signOn.php">Login/Logout Sessions (USERNAME & PASSWORD: wdv341)</a></li>
+                    </ul>
+                </div>
+
+                <div id="course" class="hidden">
+                    <h3>Web Design</h3>
+                    <p>All web design links look better when using a desktop :)</p>
+                    <ul>
+                        <li><a href="previousWork/webDesign/RedsCoffee/redsCoffee.html">Red's Coffee Landing Page</a></li>
+                        <li><a href="previousWork/webDesign/urbanGardens/ug.html">Urban Gardens</a></li>
+                        <li><a href="previousWork/webDesign/doogies/doogies.html">DOOGIES Venue</a></li>
+                        <li><a href="previousWork/webDesign/NikeShoes/nikeShoes.html">Nike Shoes Landing Page</a></li>
+                        <li><a href="previousWork/webDesign/silkBARS/silkBARS.html">SilkBars Chocolate Landing Page</a></li>
+                    </ul>
+                </div>
+
+                <div id="course" class="hidden">
+                    <h3>Photoshop</h3>
+                    <ul>
+                        <li><a href="previousWork/photoshop/banners/banners.html">Banners</a></li>
+                        <li><a href="previousWork/photoshop/butterfly_animation_webpage/butterfly_website(1).html">Butterfly Animation</a></li>
+                        <li><a href="previousWork/photoshop/CoolType_webpage/ownbanner.html">Personal Banner</a></li>
+                        <li><a href="previousWork/photoshop/fishsign_animation_webpage/fishsignwebsite.html">Fish Sign Animation</a></li>
+                        <li><a href="previousWork/photoshop/replacing_backgrounds_wepage/replaced_backgrounds.html">Replacing Backgrounds</a></li>
+                        <li><a href="previousWork/photoshop/student_animations&videos/student_webpage.html">Animations and Videos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div id="column">
+                <h2 class="hidden">STAY IN TOUCH</h2>
+                <p class="hidden"><b>Email:</b> darrian98@me.com</p>
+                <a href="https://www.linkedin.com/in/darrian-peck-39835814a/"><img src="images/icons/grayLinkedInIcon.png" alt="LinkedIn icon" class="hidden"></a>
+                <a href="https://github.com/darrianpeck"><img src="images/icons/grayGithubIcon.png" alt="GitHub icon" style="margin-left: 10px;" class="hidden"></a>
+                <a href="https://www.instagram.com/designdarrian/"><img src="images/icons/grayIGIcon.png" alt="Instagram icon" style="margin-left: 10px;" class="hidden"></a>
+            </div>
+            <div id="column">
+                <img src="images/queen.png" id="" alt="realism painting of an old time queen on her computer" class="hidden">
+            </div>
+
+        </div>
+
+        <div id="btt" class="hidden">
+            <img src="images/icons/upArrow.svg" alt="up arrow" onclick="bttButton()">
+        </div>
+
+        <footer>
+            <a href="index.html"><img src="images/logos/DPUXILOGOgrayI.png" alt="DP UX/UI Logo" id="logo"></a>
+            <nav>
+                <a href="https://www.linkedin.com/in/darrian-peck-39835814a/"><img src="images/icons/linkedin.png" alt="LinkedIn icon"></a>
+                <a href="https://github.com/darrianpeck"><img src="images/icons/github.png" alt="GitHub icon"></a>
+                <a href="https://www.instagram.com/designdarrian/"><img src="images/icons/instagram.png" alt="Instagram icon"></a>
+                <ul>
+                    <li><a onclick="showTitle()">HOME</a></li>
+                    <li><a onclick="showAbout()">ABOUT</a></li>
+                    <li><a onclick="showUXUI()">UX/UI</a></li>
+                    <li><a onclick="showWDV()">WEB DEVELOPMENT</a></li>
+                    <li><a onclick="showContact()">CONTACT</a></li>
+                </ul>
+                <p>Copyright <span id="year"></span>; Designed by DARRIAN</p>
+            </nav><!--close nav-->
+        </footer>
+    </div><!--close indexContainer-->
+</body>
+</html>
