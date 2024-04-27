@@ -1,0 +1,111 @@
+#container {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 70px;
+
+    p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #name, #overview, #question, #goal {
+        padding: 7px;
+
+        h3 {
+            padding-bottom: 7px;
+        }
+
+        p {
+            padding-bottom: 10px;
+            width: 50%;
+        }
+    }
+
+    #myPart {
+        padding: 7px; 
+
+        h3 {
+            padding-bottom: 7px;
+        }
+
+        p {
+            padding-bottom: 10px;
+            width: 50%;
+        }
+
+        ol {
+            padding-left: 30px;
+
+            li {
+                width: 50%;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 7px;
+                line-height: 20px;
+
+                #desktop {
+                    width: 550px;
+                    height: auto;
+                    margin: 10px;
+                }
+
+                #mobile {
+                    width: 200px;
+                    height: auto;
+                    margin: 10px;
+                }
+                p {
+                    width: 100%;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #container {
+        display: block;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 10px;
+    
+        #name, #overview, #question, #goal {
+            padding: 7px;
+    
+            h3 {
+                padding-bottom: 7px;
+            }
+    
+            p {
+                padding-bottom: 10px;
+                width: 90%;
+            }
+        }
+    
+        #myPart {
+    
+            ol {
+                padding-left: 10px;
+    
+                li {
+                    width: 90%;
+    
+                    #desktop {
+                        width: 300px;
+                        height: auto;
+                    }
+            
+                    #mobile {
+                        width: 200px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

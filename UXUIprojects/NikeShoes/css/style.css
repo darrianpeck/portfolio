@@ -1,0 +1,88 @@
+#container {
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 70px;
+}
+#container p {
+  font-size: 16px;
+  line-height: 20px;
+}
+#container #name, #container #overview, #container #question, #container #goal {
+  padding: 7px;
+}
+#container #name h3, #container #overview h3, #container #question h3, #container #goal h3 {
+  padding-bottom: 7px;
+}
+#container #name p, #container #overview p, #container #question p, #container #goal p {
+  padding-bottom: 10px;
+  width: 50%;
+}
+#container #myPart {
+  padding: 7px;
+}
+#container #myPart h3 {
+  padding-bottom: 7px;
+}
+#container #myPart p {
+  padding-bottom: 10px;
+  width: 50%;
+}
+#container #myPart ol {
+  padding-left: 30px;
+}
+#container #myPart ol li {
+  width: 50%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 7px;
+  line-height: 20px;
+}
+#container #myPart ol li #desktop {
+  width: 550px;
+  height: auto;
+  margin: 10px;
+}
+#container #myPart ol li #mobile {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+#container #myPart ol li p {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #container {
+    display: block;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+  }
+  #container #name, #container #overview, #container #question, #container #goal {
+    padding: 7px;
+  }
+  #container #name h3, #container #overview h3, #container #question h3, #container #goal h3 {
+    padding-bottom: 7px;
+  }
+  #container #name p, #container #overview p, #container #question p, #container #goal p {
+    padding-bottom: 10px;
+    width: 90%;
+  }
+  #container #myPart ol {
+    padding-left: 10px;
+  }
+  #container #myPart ol li {
+    width: 90%;
+  }
+  #container #myPart ol li #desktop {
+    width: 300px;
+    height: auto;
+  }
+  #container #myPart ol li #mobile {
+    width: 200px;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald";
+  letter-spacing: 3px;
+}
+
+body {
+  background-color: #FAF7F7;
+}
+
+#gridContainer {
+  display: grid;
+  grid-template-areas: "navDesktop navDesktop navDesktop navDesktop" "shoe shoe desc desc" "down down down down" "also also also also" "footer footer footer footer";
+  gap: 10px;
+}
+#gridContainer #logo {
+  height: 60px;
+  width: 100px;
+  margin-left: 100px;
+}
+#gridContainer #cart {
+  height: 40px;
+  width: 40px;
+}
+#gridContainer #navMobile {
+  display: none;
+}
+#gridContainer #navDesktop {
+  grid-area: navDesktop;
+  background-color: #97A8B0;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+#gridContainer #navDesktop ul {
+  list-style-type: none;
+  float: right;
+  padding: 20px;
+}
+#gridContainer #navDesktop li {
+  display: inline;
+  padding: 40px;
+  color: #FAF7F7;
+}
+#gridContainer #shoe {
+  grid-area: shoe;
+  margin-left: 125px;
+  padding: 10px;
+}
+#gridContainer #shoe img {
+  width: 500px;
+  height: 500px;
+}
+#gridContainer #shoe #mobile {
+  display: none;
+}
+#gridContainer #desc {
+  grid-area: desc;
+  background-color: #CA7F84;
+  padding: 30px;
+  color: #FAF7F7;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 10px 15px 10px rgba(216, 216, 216, 0.4901960784);
+}
+#gridContainer #desc h1, #gridContainer #desc h2, #gridContainer #desc h3, #gridContainer #desc h4 {
+  padding: 10px;
+  line-height: 20px;
+}
+#gridContainer #desc p {
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+}
+#gridContainer #desc select {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #4A6A79;
+  background-color: #FAF7F7;
+  border-radius: 0;
+  border: none;
+  width: 80%;
+}
+#gridContainer #desc button {
+  padding: 15px;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-size: 20px;
+  color: #4A6A79;
+  background-color: #FAF7F7;
+  border: none;
+}
+#gridContainer #down {
+  grid-area: down;
+  margin-top: 20px;
+}
+#gridContainer #down img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  color: #CA7F84;
+  margin-bottom: -37px;
+}
+#gridContainer #also {
+  grid-area: also;
+  margin-top: 100px;
+  padding: 10px;
+  color: #4A6A79;
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+#gridContainer #also h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#gridContainer #also #otherShoes {
+  float: left;
+  width: 30%;
+  margin: 10px;
+  border-left: solid 1px #4A6A79;
+  padding: 20px;
+}
+#gridContainer #also #otherShoes h3, #gridContainer #also #otherShoes h4 {
+  padding-left: 50px;
+}
+#gridContainer #also img {
+  width: auto;
+  height: 350px;
+  margin: 0px;
+  padding: 10px;
+  margin-top: 10px;
+}
+#gridContainer #footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #97A8B0;
+  color: #FAF7F7;
+}
+#gridContainer #footer #logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 140px;
+}
+#gridContainer #footer #navDesktop ul {
+  list-style-type: none;
+  float: none;
+  padding: 20px;
+}
+#gridContainer #footer #navDesktop li {
+  display: inline;
+  padding: 40px;
+  color: #FAF7F7;
+}/*# sourceMappingURL=style.css.map */

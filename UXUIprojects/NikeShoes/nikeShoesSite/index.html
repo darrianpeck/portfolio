@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/imageSlider.css">
+    <link rel="stylesheet" href="css/800style.scss">
+    <link rel="stylesheet" href="css/800style.css">
+    <link rel="stylesheet" href="css/animation.scss">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+
+    <!--GSAP ANIMATON-->
+    <script type="module" src="js/animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script>
+        function pageLoad(){
+            //alert("page loaded!!!");
+        }
+
+        function displayMenu(){
+            document.querySelector("#mobileMenu").style.display = "block";
+        }
+
+        function closeHambMenu(){
+            document.querySelector("#mobileMenu").style.display = "none";
+        }
+
+        let shoeSizes = [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11];
+        //console.log(shoeSizes);
+
+        function showRecommended(){
+            //alert("showRecommended");
+            document.getElementById("also").scrollIntoView();
+        }
+
+        function addToCart(){
+            alert("This button does nothing!");
+        }
+    </script>
+</head>
+<body onload="pageLoad()">
+    <div id="gridContainer">
+        <div id="navDesktop">
+            <img src="images/logo.png" id="logo" alt="DPUXI logo">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li style="text-decoration: underline;">SHOP</li>
+                <li>CONTACT</li>
+                <img src="images/icons/cart.png" id="cart" alt="shopping cart icon">
+            </ul>
+        </div><!--close nav-->
+
+        <div id="navMobile">
+            <img src="images/logo.png" id="logo" alt="DPUXI logo">
+            <img src="images/icons/menu.png" alt="hamburger menu icon" id="hambMenu" onclick="displayMenu()">
+            <ul id="mobileMenu">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li style="text-decoration: underline;">SHOP</li>
+                <li>CONTACT</li>
+                <li><img src="images/icons/cart.png" id="cart" alt="shopping cart icon"></li>
+                <li onclick="closeHambMenu()"><em>Close Menu</em></li>
+            </ul>
+        </div><!--close nav-->
+
+            <div id="shoe">
+                <h1 id="mobile">AIR MAX 270</h1>
+                <h3 id="mobile">Running Shoe</h3>
+                <h2 id="mobile">$80</h2>
+
+                <!--SLIDING PHOTOS-->
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <img src="images/shoes/topicShoes.png" alt="Nike Air Max shoes">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="images/shoes/topicShoes2.png" alt="Nike Air Max shoes details">
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="images/shoes/topicShoes3.png" alt="Nike Air Max Shoes details">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                    
+                    <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+               <!--<img src="images/shoes/topicShoes.png" alt="Nike shoes" id="shoePhoto">--> 
+            </div><!--close shoe-->
+
+
+            <div id="desc">
+                <h1 id="desktop">AIR MAX 270</h1>
+                <h3 id="desktop">Running Shoe</h3>
+                <h2 id="desktop">$80</h2>
+                <h4>Description:</h4>
+                <p id="desc-text">Introducing the Nike Air Max 270 Sneaker, a perfect blend of style and functionality. 
+                    Designed specifically for running, these vibrant and colorful shoes provide exceptional support to your feet. 
+                    With their innovative Air Max technology, they offer superior cushioning and impact absorption, ensuring a comfortable and smooth stride. 
+                    Whether you're hitting the track or simply going for a casual stroll, these sneakers are a must-have for any active individual.</p><!--I used AI to generate this description!-->
+                <p>
+                    <select>
+                        <option>Please select a size...</option>
+                        <script>
+                            for(x=0; x<shoeSizes.length; x++){
+                              document.write("<option>" + shoeSizes[x] + "</option>" );
+                            }  
+                        </script>
+                    </select>
+                </p>
+                <p>
+                    <button id="addToCart" onclick="addToCart()">ADD TO CART</button>
+                </p>
+            </div><!--close description-->
+
+
+            <div id="down" onclick="showRecommended()">
+            <img src="images/icons/arrow.png" alt="arrow icon pointing down" id="arrowIcon">
+            <img src="images/icons/arrow.png" alt="arrow icon pointing down" id="arrowIcon">
+            </div><!--close down-->
+
+
+            <div id="also">
+                <h2><em>You may also like...</em></h2>
+                <div id="otherShoes" style="border-left: none;">
+                    <img src="images/shoes/colorfulNikes.png" alt="colorful Nike shoes">
+                    <h4>Air Max 90</h4>
+                    <h3>$130</h3>
+                </div>
+
+                <div id="otherShoes">
+                    <img src="images/shoes/pandaNikes.png" alt="black and white Nike shoes">
+                    <h4>Dunk Low</h4>
+                    <h3>$90</h3>
+                   
+                </div>
+
+                <div id="otherShoes" style="border-bottom: none;">
+                    <img src="images/shoes/whiteNikes.png" alt="white Nike shoes">
+                    <h4>Air Max 270</h4>
+                    <h3>$160</h3>
+                </div>
+            </div><!--close see also-->
+
+
+        <div id="footer">
+            <p>ACADEMIC PROJECT</p>
+            <div id="navDesktop">
+                <img src="images/logo.png" id="logo" alt="DPUXI logo">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li style="text-decoration: underline;">SHOP</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div><!--close nav-->
+    
+            <div id="navMobile">
+                <img src="images/logo.png" id="logo" alt="DPUXI logo">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li style="text-decoration: underline;">SHOP</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div><!--close nav-->
+        </div><!--close footer-->
+    </div>
+
+
+</body>
+</html>

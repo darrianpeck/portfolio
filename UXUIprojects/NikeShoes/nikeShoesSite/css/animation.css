@@ -1,0 +1,106 @@
+#shoe, #desc {
+  -webkit-animation-name: shoeAnimation;
+          animation-name: shoeAnimation;
+  position: relative;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-delay: 0.4;
+          animation-delay: 0.4;
+}
+
+@-webkit-keyframes shoeAnimation {
+  0% {
+    left: 1000px;
+  }
+  15% {
+    left: 850px;
+  }
+  25% {
+    left: 750px;
+  }
+  35% {
+    left: 650px;
+  }
+  50% {
+    left: 500px;
+  }
+  65% {
+    left: 450px;
+  }
+  75% {
+    left: 250px;
+  }
+  85% {
+    left: 150px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes shoeAnimation {
+  0% {
+    left: 1000px;
+  }
+  15% {
+    left: 850px;
+  }
+  25% {
+    left: 750px;
+  }
+  35% {
+    left: 650px;
+  }
+  50% {
+    left: 500px;
+  }
+  65% {
+    left: 450px;
+  }
+  75% {
+    left: 250px;
+  }
+  85% {
+    left: 150px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+#down {
+  -webkit-animation: downArrows 0.3s infinite;
+          animation: downArrows 0.3s infinite;
+  position: relative;
+}
+
+@-webkit-keyframes downArrows {
+  0% {
+    top: 4px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes downArrows {
+  0% {
+    top: 4px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+button {
+  box-shadow: 4px 5px rgba(216, 216, 216, 0.431372549);
+}
+
+p button:active {
+  box-shadow: 2px 3px rgba(216, 216, 216, 0.5568627451);
+  transform: translateY(4px);
+}/*# sourceMappingURL=animation.css.map */

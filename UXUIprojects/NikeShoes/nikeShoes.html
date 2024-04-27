@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"><!--Title font-->
+    <link href="../../css/mainStyle.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="../../css/800style.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/800style.css" rel="stylesheet" type="text/css">
+    <link href="../../css/animation.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/animation.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.scss" rel="stylesheet" type="text/scss">
+
+    <script defer src="../../js/javascript.js"></script><!--defer attribute will run after the html body-->
+
+    <title>Darrian's Portfolio</title>
+</head>
+<body>
+    <div id="indexContainer">
+        <header id="header">
+            <nav id="nav">
+                <a href="../../index.html"><img src="../../images/logos/DPUXILOGOgrayI.png" style="margin-left: 50px;" alt="DP UX/UI Logo" id="logo"></a>
+                <img src="../../images/icons/hamburgerMenu.png" alt="hamburger menu icon" id="hambMenu" onclick="displayMenu()">
+                <ul id="navMenu">
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../index.html">ABOUT</a></li>
+                    <li><a href="../../index.html">UX/UI</a></li>
+                    <li><a href="../../index.html">WEB DEVELOPMENT</a></li>
+                    <li><a href="../../index.html">CONTACT</a></li>
+                </ul>
+            </nav><!--close nav-->
+        </header>
+
+        <div id="container">
+            <div id="name" class="hidden" style="margin-top: 90px;">
+                <h1>Using Motion UI to Improve a Landing Page</h1>
+                <h3>A little added motion</h3>
+                <p>LIVE SITE: <a href="nikeShoesSite/index.html">Nike Shoes Landing Page</a></p>
+            </div>
+
+            <div id="overview" class="hidden">
+                <h3><em>Overview</em></h3>
+                <p>This was an assignment on Motion UI. </p>
+            </div>
+
+            <div id="question" class="hidden">
+                <h3><em>Question</em></h3>
+                <p>How can I enhance my site with motion?</p>
+            </div>
+
+            <div id="goal" class="hidden">
+                <h3><em>Goal</em></h3>
+                <p>
+                    Add motion to the page to help guide a user through it. 
+                </p>
+            </div>
+
+            <div id="myPart">
+                <div class="hidden">
+                    <h3><em>My Part</em></h3>
+                </div>
+
+                <ol>
+                    <li class="hidden"><p><b>Understand the users and their values.</b></p>
+                        <b>Research: </b>
+                        <p>
+                            Google defines motion UI as: “To implement Motion UI in web development, developers often use libraries and frameworks such as CSS animations, JavaScript animation libraries like GreenSock Animation Platform (GSAP), or even CSS animations with the help of pre-built frameworks like Animate. css."
+                        </p>
+                        <p>
+                            People like motion UI because it's visually appealing, intuitive, provides greater usability, and it makes it easier for users with disabilities.
+                        </p>
+                        <p>
+                            Developers use motion UI to enhance users engagement, and to capture their attention through animations, transitions and interactive elements.
+                            Motiion UI can lead to improved user engagement and longer visit durations.
+                        </p>
+                    </li>
+
+                    <li class="hidden"><p><b>Define the problem. </b></p>
+                        <p>
+                            My assignment was to add motion UI to a page.
+                        </p>
+                    </li>
+
+                    <li class="hidden"><p><b>Choosing the aesthetics. </b></p>
+                        <p>
+                            I found a free to use photo of Nike shoes and used the colors in that shoe as the color palette.
+                        </p>
+                    </li>
+
+                    <li class="hidden"><p><b>Design the product. </b></p>
+                        <p>
+                            The wireframes were created in Adobe XD.
+                        </p>
+                        <img src="images/LowFidelity.png" alt="low fidelity wireframe for Nike shoes landing page" id="desktop">
+                        <img src="images/LowFidelitymobile.png" alt="low fidelity wireframe for Nike shoes landing page mobile" id="mobile">
+                        <img src="images/HighFidelity.png" alt="high fidelity wireframe for Nike shoes landing page" id="desktop">
+                        <img src="images/HighFidelitymobile.png" alt="high fidelity wireframe for Nike shoes landing page mobile" id="mobile"> 
+                    </li>
+
+                    <li class="hidden"><p><b>Implement the solution onto a webpage. </b></p>
+                        <p>
+                            <a href="nikeShoesSite/index.html">Nike Shoes Landing Page</a> 
+                        </p>
+                    </li>
+
+                    <li class="hidden">
+                        <p><b>Evaluate the work and improve it. </b></p>
+                        <p>
+                            If I were to take more time to work with this page, I wouls create more motion in the button and drop down shoe size selection.
+                            I would also find more ways to add more motion to the mobile version.
+                        </p>
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+
+        <div id="btt" class="hidden">
+            <img src="../../images/icons/upArrow.svg" alt="up arrow" onclick="bttButton()">
+        </div>
+
+        <footer>
+            <a href="../../index.html"><img src="../../images/logos/DPUXILOGOgrayI.png" alt="DP UX/UI Logo" id="logo"></a>
+            <nav>
+                <a href="https://www.linkedin.com/in/darrian-peck-39835814a/"><img src="../../images/icons/linkedin.png" alt="LinkedIn icon"></a>
+                <a href="https://github.com/darrianpeck"><img src="../../images/icons/github.png" alt="GitHub icon"></a>
+                <a href="https://www.instagram.com/designdarrian/"><img src="../../images/icons/instagram.png" alt="Instagram icon"></a>
+                <ul>
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../index.html">ABOUT</a></li>
+                    <li><a href="../../index.html">UX/UI</a></li>
+                    <li><a href="../../index.html">WEB DEVELOPMENT</a></li>
+                    <li><a href="../../index.html">CONTACT</a></li>
+                </ul>
+                <p>Copyright <span id="year"></span>; Designed by DARRIAN</p>
+            </nav><!--close nav-->
+        </footer>
+    </div><!--close indexContainer-->
+</body>
+</html>

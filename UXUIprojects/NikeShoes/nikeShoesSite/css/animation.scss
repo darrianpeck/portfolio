@@ -1,0 +1,44 @@
+#shoe, #desc {
+    animation-name: shoeAnimation;
+    position: relative;
+    animation-duration: .2s;
+    animation-delay: .4;
+    
+}
+
+@keyframes shoeAnimation {
+    0% {left: 1000px;}
+    15% {left: 850px;}
+    25% {left: 750px;}
+    35% {left: 650px;}
+    50% {left: 500px;}
+    65% {left: 450px;}
+    75% {left: 250px;}
+    85% {left: 150px;}
+    100% {left: 0px;}
+}
+
+#down {
+    animation: downArrows .3s infinite;
+    position: relative;
+}
+
+@keyframes downArrows {
+    0% {top: 4px;}
+    50% {top: 2px;}
+    100% {top: 0px;}
+}
+
+button {
+    box-shadow: 4px 5px #d8d8d86e;
+}
+
+//p button:hover {
+ //   background-color: #3e8e41
+//}
+
+p button:active {
+  //background-color: #3e8e41;
+  box-shadow: 2px 3px #d8d8d88e;
+  transform: translateY(4px);
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"><!--Title font-->
+    <link href="../../css/mainStyle.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="../../css/800style.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/800style.css" rel="stylesheet" type="text/css">
+    <link href="../../css/animation.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/animation.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.scss" rel="stylesheet" type="text/scss">
+
+    <script defer src="../../js/javascript.js"></script><!--defer attribute will run after the html body-->
+
+    <title>Darrian's Portfolio</title>
+</head>
+<body>
+    <div id="indexContainer">
+        <header id="header">
+            <nav id="nav">
+                <a href="../../index.html"><img src="../../images/logos/DPUXILOGOgrayI.png" style="margin-left: 50px;" alt="DP UX/UI Logo" id="logo"></a>
+                <img src="../../images/icons/hamburgerMenu.png" alt="hamburger menu icon" id="hambMenu" onclick="displayMenu()">
+                <ul id="navMenu">
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../index.html">ABOUT</a></li>
+                    <li><a href="../../index.html">UX/UI</a></li>
+                    <li><a href="../../index.html">WEB DEVELOPMENT</a></li>
+                    <li><a href="../../index.html">CONTACT</a></li>
+                </ul>
+            </nav><!--close nav-->
+        </header>
+
+        <div id="portfolioDesignContainer">
+            <div id="name" class="hidden" style="margin-top: 90px;">
+                <h1>How Do I Design Me?</h1><!--different name for this project, more of of sentence instead of a title-->
+                <h3>Clean and Simple</h3>
+            </div>
+
+            <div id="overview" class="hidden">
+                <h3><em>Overview</em></h3>
+                <p>My portfolio is the online version of me. I wanted to make it simple and clean. </p>
+            </div>
+
+            <div id="question" class="hidden">
+                <h3><em>Question</em></h3>
+                <p>How can I design myself?</p>
+            </div>
+
+            <div id="goal" class="hidden">
+                <h3><em>Goal</em></h3>
+                <p>The goal of my portfolio is for users to get to know me a little bit while they explore my skills. 
+                    I want users viewing my portfolio to know I am organized but creative.
+                </p>
+            </div>
+
+            <div id="myPart">
+                <div class="hidden">
+                    <h3><em>My Part</em></h3>
+                </div>
+
+                <ol>
+                    <li class="hidden"><p><b>Understand the users and their values.</b></p>
+                        <b>Research: </b>
+                        <p>
+                            This portfolio is mostly going to be viewed by employers. 
+                            In a portfolio, employers look for an introduction, skills, professional development, and a resume. 
+                            In a design forward portfolio, employers usually look for creativity, attention to detail, case studies, and problem solving in my work. 
+                            More specifically in a UX or UI design portfolio, they may look for my personality, my story, original work, and even who inspires me. 
+                            In a Web Developer's portfolio, employers will be looking for well written code, skills, my work, and of course my contact info. 
+                            Throughout this portfolio, I have incorporated all of this information. 
+                            The most important thing for me to do is show my personality.
+                            I would really like others to know who I am and why I do things the way I do. 
+                        </p> 
+                        <p>I have redesigned my portfolio twice since starting the web development program in August of 2022. I made it all one page because it felt simple.
+                            It was also easier than creating five other pages that would have had minimal content anyway. 
+                        </p>
+                    </li>
+
+                    <li class="hidden"><p><b>Define the problem. </b></p>
+                        <p>
+                            Introducing myself without actaully introducing myself...I want visitors to feel like they are meeting me. 
+                        </p>
+                    </li>
+
+                    <li class="hidden"><p><b>Choosing the aesthetics. </b></p>
+                        <p>In order for me to make a good first impression, I need to have a nice flowing layout and a simple color palette. 
+                            The information on the site is more important than the way the site looks, but as a design forward person...looks do matter.
+                        </p>
+                        <p>White is associated with innocence, cleanliness, and purity.</p>
+                        <p>Gray is a color of intellect and promise.</p>
+                    </li>
+
+                    <li class="hidden"><p><b>Design the product. </b></p>
+                        <p>
+                            The wireframes were created in Adobe XD.
+                        </p>
+                        <img src="wireframes/desktop/index.png" alt="low fidelity wireframe of Darrian's portfolio" id="desktop">
+                    </li>
+
+                    <li class="hidden"><p><b>Implement the solution onto a webpage. </b></p>
+                        <p>
+                            <a href="../../index.html">darrianpeck.com</a> 
+                        </p>
+                    </li>
+
+                    <li class="hidden">
+                        <p><b>Evaluate the work and improve it. </b></p>
+                        <p>
+                            I plan on expanding my skills and experience to add to my portfolio. 
+                            I would like to have buttons on each project/work page that say 'Next Project' instead of making the user start over and/or going back to the main page each time.
+                            I want the user to stay on the same page when they submit the Stay In Touch form instead of taking them to a different page. 
+                            I would like to add motion to the mobile menu when it drops down.
+                            I think when the user clicks the back to top arrows, it would be nice to have the site glide the user up to the top.
+                        </p>
+                    </li>
+                </ol>
+
+            </div>
+        </div>
+
+        <div id="btt" class="hidden">
+            <img src="../../images/icons/upArrow.svg" alt="up arrow" onclick="bttButton()">
+        </div>
+
+        <footer>
+            <a href="../../index.html"><img src="../../images/logos/DPUXILOGOgrayI.png" alt="DP UX/UI Logo" id="logo"></a>
+            <nav>
+                <a href="https://www.linkedin.com/in/darrian-peck-39835814a/"><img src="../../images/icons/linkedin.png" alt="LinkedIn icon"></a>
+                <a href="https://github.com/darrianpeck"><img src="../../images/icons/github.png" alt="GitHub icon"></a>
+                <a href="https://www.instagram.com/designdarrian/"><img src="../../images/icons/instagram.png" alt="Instagram icon"></a>
+                <ul>
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../index.html">ABOUT</a></li>
+                    <li><a href="../../index.html">UX/UI</a></li>
+                    <li><a href="../../index.html">WEB DEVELOPMENT</a></li>
+                    <li><a href="../../index.html">CONTACT</a></li>
+                </ul>
+                <p>Copyright <span id="year"></span>; Designed by DARRIAN</p>
+            </nav><!--close nav-->
+        </footer>
+    </div><!--close indexContainer-->
+</body>
+</html>
