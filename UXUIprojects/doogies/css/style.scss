@@ -1,0 +1,41 @@
+#container {
+    padding: 20px;
+    margin-top: 90px;
+
+    #desktop {
+        img {
+            width: 700px;
+            height: auto;
+            
+        }
+    }
+
+    #mobile {
+        img {
+            width: 200px;
+            height: auto;
+            margin-left: 10px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    #container {
+        padding: 10px;
+        margin-top: 90px;
+    
+        #desktop {
+            img {
+                width: 300px;
+                height: auto;
+            }
+        }
+    
+        #mobile {
+            img {
+                width: 200px;
+                height: auto;
+                margin-left: 10px;
+            }
+        }
+    }
+}

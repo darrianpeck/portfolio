@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"><!--Title font-->
+    <link href="../../css/mainStyle.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/mainStyle.css" rel="stylesheet" type="text/css">
+    <link href="../../css/800style.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/800style.css" rel="stylesheet" type="text/css">
+    <link href="../../css/animation.scss" rel="stylesheet" type="text/scss">
+    <link href="../../css/animation.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.scss" rel="stylesheet" type="text/scss">
+
+    <script defer src="../../js/javascript.js"></script><!--defer attribute will run after the html body-->
+
+    <title>Darrian's Portfolio</title>
+</head>
+<body>
+    <div id="indexContainer">
+        <header id="header">
+            <nav id="nav">
+                <a href="../../index.html"><img src="../../images/logos/DPUXILOGOgrayI.png" style="margin-left: 50px;" alt="DP UX/UI Logo" id="logo"></a>
+                <img src="../../images/icons/hamburgerMenu.png" alt="hamburger menu icon" id="hambMenu" onclick="displayMenu()">
+                <ul id="navMenu">
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../index.html">ABOUT</a></li>
+                    <li><a href="../../index.html">UX/UI</a></li>
+                    <li><a href="../../index.html">WEB DEVELOPMENT</a></li>
+                    <li><a href="../../index.html">CONTACT</a></li>
+                </ul>
+            </nav><!--close nav-->
+        </header>
+
+        <div id="container">
+            <div id="desktop">
+                <img src="desktop/DoogiesDesktopHomePage.png" alt="high fidelity wireframe of Doogies Entertainment home page">
+                <img src="desktop/DoogiesDesktopEvents.png" alt="high fidelity wireframe of Doogies Entertainment events page">
+                <img src="desktop/EventDesktop.png" alt="high fidelity wireframe of Doogies Entertainment bookings page">
+                <img src="desktop/GalleryDesktop1.png" alt="high fidelity wireframe of Doogies Entertainment gallery page">
+                <img src="desktop/DoogiesDesktopAboutUs.png" alt="high fidelity wireframe of Doogies Entertainment about us page">
+                <img src="desktop/DoogiesDesktopContactUs.png" alt="high fidelity wireframe of Doogies Entertainment contact us page">
+            </div>
+
+            <div id="mobile">
+                <img src="mobile/Home.png" alt="high fidelity wireframe of Doogies Entertainment home page mobile version">
+                <img src="mobile/HomeMenuMobile.png" alt="high fidelity wireframe of Doogies Entertainment home page mobile version">
+                <img src="mobile/bookings.png" alt="high fidelity wireframe of Doogies Entertainment bookings page mobile version">
+                <img src="mobile/EventsMobile.png" alt="high fidelity wireframe of Doogies Entertainment events page mobile version">
+                <img src="mobile/GalleryDesktop.png" alt="high fidelity wireframe of Doogies Entertainment gallery page mobile version">
+                <img src="mobile/AboutUsMobile.png" alt="high fidelity wireframe of Doogies Entertainment about page mobile version">
+                <img src="mobile/ContactUsMobile.png" alt="high fidelity wireframe of Doogies Entertainment contact page mobile version">
+            </div>
+
+        </div>
+
+        <div id="btt" class="hidden">
+            <img src="../../images/icons/upArrow.svg" alt="up arrow" onclick="bttButton()">
+        </div>
+
+        <footer>
+            <a href="../../index.html"><img src="../../images/logos/DPUXILOGOgrayI.png" alt="DP UX/UI Logo" id="logo"></a>
+            <nav>
+                <a href="https://www.linkedin.com/in/darrian-peck-39835814a/"><img src="../../images/icons/linkedin.png" alt="LinkedIn icon"></a>
+                <a href="https://github.com/darrianpeck"><img src="../../images/icons/github.png" alt="GitHub icon"></a>
+                <a href="https://www.instagram.com/designdarrian/"><img src="../../images/icons/instagram.png" alt="Instagram icon"></a>
+                <ul>
+                    <li><a href="../../index.html">HOME</a></li>
+                    <li><a href="../../index.html">ABOUT</a></li>
+                    <li><a href="../../index.html">UX/UI</a></li>
+                    <li><a href="../../index.html">WEB DEVELOPMENT</a></li>
+                    <li><a href="../../index.html">CONTACT</a></li>
+                </ul>
+                <p>Copyright <span id="year"></span>; Designed by DARRIAN</p>
+            </nav><!--close nav-->
+        </footer>
+    </div><!--close indexContainer-->
+</body>
+</html>

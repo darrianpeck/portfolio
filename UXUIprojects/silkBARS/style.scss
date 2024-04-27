@@ -1,0 +1,27 @@
+#container {
+    padding: 20px;
+    margin-top: 90px;
+
+    #desktop {
+        img {
+            width: 700px;
+            height: auto;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #container {
+        padding: 10px;
+    
+        #desktop {
+            img {
+                width: 90%;
+                height: auto;
+                
+            }
+        }
+    }
+}
