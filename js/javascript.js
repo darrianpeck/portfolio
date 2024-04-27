@@ -1,12 +1,16 @@
 //alert("JavaScript is connected!");
 //https://www.youtube.com/watch?v=T33NN_pPeNI       //watched this video to get this effect
 
-function displayMenu(){
-    document.querySelector("#navMenu").style.display = "block";
-}
-
-function closeHambMenu(){
-    document.querySelector("#navMenu").style.display = "none";
+//function displayMenu(){
+  //  document.querySelector("#navMenu").style.display = "block";
+//}
+function displayMenu() {
+    const x = document.querySelector("#navMenu");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
 }
 
 function showTitle(){
@@ -50,7 +54,20 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const date = new Date();
 const year = date.getFullYear();
-document.getElementById("year").innerHTML = year
+document.getElementById("year").innerHTML = year;
+
+function readMore(){
+    document.querySelector("#hideMobile").style.display = "block";
+    document.querySelector("#readMore").style.display = "none";
+    document.querySelector("#readLess").style.display = "block";
+}
+
+function readLess() {
+    document.querySelector("#hideMobile").style.display = "none";
+    document.querySelector("#readMore").style.display = "block";
+    document.querySelector("#readLess").style.display = "none";
+}
+
 
 
 

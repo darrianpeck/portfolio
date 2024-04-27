@@ -17,15 +17,24 @@ p, ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+img {
+  border-radius: 5px;
+}
+
 button {
-  padding: 20px;
+  padding: 10px 20px;
   margin-top: 10px;
   border: none;
   background-color: #F4EEEE;
   font-size: 16px;
+  border-radius: 5px;
 }
 button a {
   color: #2B2A2A;
+  text-decoration: none;
+}
+button a:hover {
+  text-decoration: underline;
 }
 
 #indexContainer {
@@ -35,6 +44,13 @@ button a {
 #indexContainer header {
   grid-area: header;
   background-color: #2B2A2A;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 0.5px solid #F4EEEE;
+}
+#indexContainer header nav {
+  margin-bottom: -10px;
 }
 #indexContainer header nav #hambMenu {
   display: none;
@@ -47,13 +63,11 @@ button a {
   list-style-type: none;
   margin-top: 35px;
   float: right;
-}
-#indexContainer header nav ul p {
-  display: none;
+  margin-right: 50px;
 }
 #indexContainer header nav li {
   display: inline;
-  padding: 30px;
+  padding-left: 30px;
 }
 #indexContainer header nav a {
   color: #F4EEEE;
@@ -73,12 +87,13 @@ button a {
   font-size: 150px;
   padding-left: 150px;
   line-height: 130px;
+  margin-top: 60px;
 }
 #indexContainer #title p {
-  padding-left: 150px;
+  padding-left: 160px;
 }
 #indexContainer #title button {
-  margin-left: 150px;
+  margin-left: 160px;
 }
 #indexContainer #about {
   grid-area: about;
@@ -92,8 +107,8 @@ button a {
   width: 50%;
 }
 #indexContainer #about #column img {
-  width: 500px;
-  height: 600px;
+  width: 350px;
+  height: auto;
 }
 #indexContainer #about #column h2 {
   padding-left: 150px;
@@ -104,6 +119,9 @@ button a {
   width: 90%;
   line-height: 24px;
   font-size: 16px;
+}
+#indexContainer #about #column #readMore, #indexContainer #about #column #readLess {
+  display: none;
 }
 #indexContainer #preview {
   grid-area: preview;
@@ -126,23 +144,28 @@ button a {
 #indexContainer #preview #projects #projectInfo {
   float: left;
   width: 50%;
-  margin-bottom: 100px;
-  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-top: 10px;
   padding-left: 150px;
 }
 #indexContainer #preview #projects #projectInfo h3 {
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 #indexContainer #preview #projects #projectInfo p {
-  padding: 10px;
+  padding-bottom: 10px;
   line-height: 20px;
+  width: 90%;
 }
 #indexContainer #preview #projects #projectInfo img {
   width: 400px;
-  height: 250px;
+  height: auto;
 }
 #indexContainer #preview #courses {
   padding-left: 150px;
+}
+#indexContainer #preview #courses #course {
+  margin-bottom: 30px;
 }
 #indexContainer #preview #courses #course ul {
   list-style-type: none;
@@ -150,6 +173,7 @@ button a {
 }
 #indexContainer #preview #courses #course ul li {
   padding: 10px;
+  font-size: 16px;
 }
 #indexContainer #preview #courses #course ul a {
   color: #F4EEEE;
@@ -166,13 +190,63 @@ button a {
   clear: both;
 }
 #indexContainer #contact h2 {
-  padding-bottom: 20px;
-  padding-top: 150px;
+  padding-bottom: 30px;
+  padding-left: 150px;
 }
 #indexContainer #contact #column {
   float: left;
   width: 40%;
   padding-left: 150px;
+}
+#indexContainer #contact #column form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#indexContainer #contact #column form label {
+  display: block;
+}
+#indexContainer #contact #column form input[type=text],
+#indexContainer #contact #column form input[type=email],
+#indexContainer #contact #column form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #2B2A2A;
+  border-radius: 5px;
+}
+#indexContainer #contact #column form #subject {
+  display: none;
+}
+#indexContainer #contact #column form textarea {
+  resize: vertical;
+  border-radius: 5px;
+}
+#indexContainer #contact #column form input[type=submit] {
+  background-color: #2B2A2A;
+  color: #F4EEEE;
+  padding: 10px 20px;
+  border: 1px solid #2B2A2A;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#indexContainer #contact #column form input[type=reset] {
+  background-color: #F4EEEE;
+  color: #2B2A2A;
+  padding: 10px 20px;
+  border: 1px solid #2B2A2A;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#indexContainer #contact #column form input[type=submit]:hover {
+  text-decoration: underline;
+}
+#indexContainer #contact #column form input[type=reset]:hover {
+  text-decoration: underline;
 }
 #indexContainer #contact #column img[alt~=queen] {
   width: 400px;
@@ -202,11 +276,12 @@ button a {
   padding: 20px;
 }
 #indexContainer footer #logo {
-  width: 150px;
-  height: 250px;
+  width: 100px;
+  height: 200px;
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: -30px;
 }
 #indexContainer footer nav {
   text-align: center;
@@ -214,7 +289,7 @@ button a {
 #indexContainer footer nav ul {
   text-align: center;
   list-style-type: none;
-  margin-top: 35px;
+  margin-top: 20px;
 }
 #indexContainer footer nav li {
   display: inline;
@@ -233,5 +308,5 @@ button a {
   margin: 10px;
 }
 #indexContainer footer nav p {
-  padding: 30px;
+  padding: 20px;
 }/*# sourceMappingURL=mainStyle.css.map */

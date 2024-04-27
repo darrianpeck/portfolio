@@ -15,6 +15,7 @@
     <link href="css/animation.css" rel="stylesheet" type="text/css">
     <script defer src="js/javascript.js"></script><!--defer attribute will run after the html body-->
 
+
     <title>Darrian's Portfolio</title>
 </head>
 <body>
@@ -23,13 +24,13 @@
             <nav id="nav">
                 <a href="index.html"><img src="images/logos/DPUXILOGOgrayI.png" style="margin-left: 50px;" alt="DP UX/UI Logo" id="logo"></a>
                 <img src="images/icons/hamburgerMenu.png" alt="hamburger menu icon" id="hambMenu" onclick="displayMenu()">
+
                 <ul id="navMenu">
                     <li><a onclick="showTitle()">HOME</a></li>
                     <li><a onclick="showAbout()">ABOUT</a></li>
                     <li><a onclick="showUXUI()">UX/UI</a></li>
                     <li><a onclick="showWDV()">WEB DEVELOPMENT</a></li>
                     <li><a onclick="showContact()">CONTACT</a></li>
-                    <p onclick="closeHambMenu()"><em>CLOSE MENU</em></p>
                 </ul>
             </nav><!--close nav-->
         </header>
@@ -40,37 +41,54 @@
             PECK
             </h1>
             <p class="hidden">DESIGNER & DEVELOPER</p>
-            <button><a href="https://docs.google.com/document/d/1l4BF0-CKa08G33-9uDj1Mc6S_d-d4tJ_66cruXghSI4/edit?usp=sharing">MY RESUME</a></button>
+            <button class="hidden"><a href="https://docs.google.com/document/d/1l4BF0-CKa08G33-9uDj1Mc6S_d-d4tJ_66cruXghSI4/edit?usp=sharing">MY RESUME</a></button>
         </div>
 
         <div id="about">
             <div id="column">
-            <h2 class="hidden">ABOUT ME</h2>
-            <p class="hidden">
-                "I have always loved to create. Painting, drawing, and making too many DIY projects. 
-                I took so much time figuring out what I wanted as a career. Radiology was my first plan, then sonography. 
-                I realized very quickly it would be a repetative job. Afraid of getting bored, and realizing I am meant to explore my creativity as it grows, happened fast. 
-                I took a few years to work while deciding what I wanted to do. I was a server and bartender; working on my people skills.
-                I started taking quizzes to find out what career is right for me. I was looking for someone else to tell me the answer…
-                I never thought creativity was a trait to have in the tech world, so you can imagine my feeling when I discovered UX Design. 
-                The term came to me on TikTok. I had no idea what it was, and being me, I had to know. 
-                After some research, I fell in love with the idea and figured out what kind of degree I needed to get a job like this."
-            </p>
-            <p class="hidden">
-                "So, here I am in the Web Development Program at Des Moines Area Community College, graduating in May of 2024. 
-                I know I am a design forward person and really enjoy frontend work. I have experience with backend work, and would love to learn more. 
-                I always say, 'I need to love what I do.' and I know I can continue to shout it after I graduate."
-            </p>
+                <h2 class="hidden">ABOUT ME</h2>
+                <p class="hidden">
+                    I have always loved to create; painting, drawing, and making too many DIY projects. 
+                    I took a lot of time figuring out what I wanted as a career. Radiology was my first plan, then sonography. 
+                    I realized quickly it would be a repetative job. I was afraid I would get bored, and I realized I am meant to explore my creativity as it grows. 
+                    I took a few years to work while deciding what I wanted to do. I was a server and bartender; working on my people skills.
+                </p>
+
+                <div id="hideMobile">
+                    <p class="hidden">
+                        I never thought creativity was a trait to have in the tech world, so you can imagine my feeling when I discovered UX/UI Design. 
+                        The term came to me on TikTok. I had no idea what it was, and being me, I had to know. 
+                        After some research, I fell in love with the idea and figured out what kind of degree I needed to get a job like this.
+                    </p>
+                    <p class="hidden">
+                        So, here I am in the Web Development Program at Des Moines Area Community College, graduating in May of 2024. 
+                        I know I am a design forward person and really enjoy frontend work. I have experience with backend work, and would love to learn more. 
+                    </p>
+                </div>
+                <div id="readMore" class="hidden">
+                    <p onclick="readMore()"><b>Read More...</b></p>
+                </div>
+                <div id="readLess" class="hidden">
+                    <p onclick="readLess()"><b>Read Less...</b></p>
+                </div>
             </div>
 
             <div id="column">
-                <img src="images/portraitGrayBGSVG.svg" alt="portrait" class="hidden" id="portrait">
+                <img src="images/newPortfolioPic.png" alt="portrait of Darrian Peck" class="hidden" id="portrait" style="margin-top: 30px;">
             </div>
         </div>
 
         <div id="preview">
             <h2 id="uxui">PROECTS & WORK</h2>
             <div id="projects">
+
+                <div id="projectInfo" class="hidden">
+                    <img src="UXUIprojects/frogville/frogvillePreview.png" alt="preview of the city of Frogville project site">
+                    <h3>The City of Frogville</h3>
+                    <p>Wireframes were made in XD. Drupal and Gemini will be used to make this site. This is a final project for my Drupal class.</p>
+                    <button><a href="UXUIprojects/frogville/frogville.html">MORE DETAILS</a></button>
+                </div>
+                
                 <div id="projectInfo" class="hidden">
                     <img src="images/ftlofPreview.png" alt="preview of project wireframe">
                     <h3>Recipe Book Website</h3>
@@ -81,9 +99,22 @@
                 <div id="projectInfo" class="hidden">
                     <img src="images/portfolioPreview.png" alt="preview of Darrian's portfolio">
                     <h3>Why I Designed My Portfolio This Way</h3>
-                    <p>How do I design me? <br>
-                        Wireframes created in XD. I built my portfolio with HTML/CSS and JavaScript.</p>
+                    <p>How do I design me? Wireframes created in XD. I built my portfolio with HTML/CSS/SCSS, JavaScript, and PHP.</p>
                     <button><a href="UXUIprojects/portfolioDesignProcess/portfolioDesign.html">MORE DETAILS</a></button>
+                </div>
+
+                <div id="projectInfo" class="hidden">
+                    <img src="UXUIprojects/NikeShoes/nikeShoesPreview.png" alt="preview of Nike shoes landing page">
+                    <h3>Sell the Shoes</h3>
+                    <p>Wireframes was made in XD. HTML/CSS/SCSS and JavaScript were used to make this landing page.</p>
+                    <button><a href="UXUIprojects/NikeShoes/nikeShoes.html">MORE DETAILS</a></button>
+                </div>
+
+                <div id="projectInfo" class="hidden">
+                    <img src="UXUIprojects/urbanGardens/UGpreview.png" alt="preview of Urban Gardens project site">
+                    <h3>Urban Gardens Project</h3>
+                    <p>Wireframes were made in XD. HTML/CSS/SCSS were used to make this site.</p>
+                    <button><a href="UXUIprojects/urbanGardens/ug.html">MORE DETAILS</a></button>
                 </div>
             </div>
 
@@ -92,7 +123,7 @@
                     <h3>HTML/CSS</h3>
                     <ul>
                         <li><a href="previousWork/html:css/darrianpeck.com1stSite/index.html">Darrian's First Portfolio (links do not work within site)</a></li>
-                        <li><a href="previousWork/html:css/darrianpeck.com/index.html">Darrian's Second (Unfinished) Portfolio</a></li>
+                        <li><a href="previousWork/html:css/darrianpeck.com/index.html">Darrian's Second Portfolio</a></li>
                         <li><a href="previousWork/html:css/bowling/index.html">Lana Lanes Bowling</a></li>
                         <li><a href="previousWork/html:css/koala_site_2020/index.html">Koala Site</a></li>
                         <li><a href="previousWork/html:css/savannas_coffee_final/index.html">Savanna's Coffee House</a></li>
@@ -101,7 +132,8 @@
                         <li><a href="previousWork/html:css/wdv205css/unit-8/bootstrap_layout_exercise/pattys_pastries.html">Patty's Pastries</a></li>
                         <li><a href="previousWork/html:css/wdv205css/unit-8/bootstrapAssignment/skinCare.html">Skin Care</a></li>
                         <li><a href="previousWork/html:css/wdv205css/unit-11/flipcards.html">Flip Cards</a></li>
-                        <li><a href="previousWork/html:css/wdv205css/unit-12/12-1AnimationAssignment/animationAssignment.html">Alien Animation (does not work in Chrome)</a></li>
+                        <li><a href="previousWork/html:css/wdv205css/unit-12/12-1AnimationAssignment/animationAssignment.html">Alien Animation</a></li>
+                        <li><a href="https://darrianfirststorage.z19.web.core.windows.net/">Microsoft Azure Static Website</a></li>
                     </ul>
                 </div>
 
@@ -128,18 +160,17 @@
                         <li><a href="previousWork/PHPwdv341/formatEvents.php">Formatted Events From PHP MyAdmin</a></li>
                         <li><a href="previousWork/PHPwdv341/SQLselect.php">SQL SELECT Event</a></li>
                         <li><a href="previousWork/PHPwdv341/sessionExampleProject/signOn.php">Login/Logout Sessions (USERNAME & PASSWORD: wdv341)</a></li>
+                        <li><a href="chatGPTsite/contact.html">Chat GPT Form</a></li>
                     </ul>
                 </div>
 
                 <div id="course" class="hidden">
-                    <h3>Web Design</h3>
-                    <p>All web design links look better when using a desktop :)</p>
+                    <h3>Drupal</h3>
                     <ul>
-                        <li><a href="previousWork/webDesign/RedsCoffee/redsCoffee.html">Red's Coffee Landing Page</a></li>
-                        <li><a href="previousWork/webDesign/urbanGardens/ug.html">Urban Gardens</a></li>
-                        <li><a href="previousWork/webDesign/doogies/doogies.html">DOOGIES Venue</a></li>
-                        <li><a href="previousWork/webDesign/NikeShoes/nikeShoes.html">Nike Shoes Landing Page</a></li>
-                        <li><a href="previousWork/webDesign/silkBARS/silkBARS.html">SilkBars Chocolate Landing Page</a></li>
+                        <li><a href="http://media.darrianpeck.com/home">Media Site</a></li>
+                        <li><a href="http://filmmaking.darrianpeck.com/">Filmmaking</a></li>
+                        <li><a href="http://blog.darrianpeck.com/">Tech Blog</a></li>
+                        <li><a href="http://sauced.darrianpeck.com/">SAUCED Pizza</a></li>
                     </ul>
                 </div>
 
@@ -158,14 +189,37 @@
         </div>
 
         <div id="contact">
+            <h2 class="hidden">STAY IN TOUCH</h2>
             <div id="column">
-                <h2 class="hidden">STAY IN TOUCH</h2>
-                <p class="hidden"><b>Email:</b> darrian98@me.com</p>
-                <a href="https://www.linkedin.com/in/darrian-peck-39835814a/"><img src="images/icons/grayLinkedInIcon.png" alt="LinkedIn icon" class="hidden"></a>
-                <a href="https://github.com/darrianpeck"><img src="images/icons/grayGithubIcon.png" alt="GitHub icon" style="margin-left: 10px;" class="hidden"></a>
-                <a href="https://www.instagram.com/designdarrian/"><img src="images/icons/grayIGIcon.png" alt="Instagram icon" style="margin-left: 10px;" class="hidden"></a>
+                <form action="thankYou.php" method="post" class="hidden" name="submitForm" id="submitForm">
+                    <div id="name">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div id="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div id="subject">
+                        <label for="subject">Subject</label>
+                        <input type="subject" id="subject" name="subject">
+                    </div>
+                    <div id="message">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <input type="reset" name="resetButton" id="resetButton" value="RESET">
+                    <input type="submit" id="submitButton" name="submitButton" value="SEND MESSAGE">
+                  
+                </form>
+
+                <div class="center">
+                    <a href="https://www.linkedin.com/in/darrian-peck-39835814a/"><img src="images/icons/grayLinkedInIcon.png" alt="LinkedIn icon" class="hidden"></a>
+                    <a href="https://github.com/darrianpeck"><img src="images/icons/grayGithubIcon.png" alt="GitHub icon" style="margin-left: 10px;" class="hidden"></a>
+                    <a href="https://www.instagram.com/designdarrian/"><img src="images/icons/grayIGIcon.png" alt="Instagram icon" style="margin-left: 10px;" class="hidden"></a>
+                </div>
             </div>
-            <div id="column">
+            <div id="column" class="center">
                 <img src="images/queen.png" id="" alt="realism painting of an old time queen on her computer" class="hidden">
             </div>
 
